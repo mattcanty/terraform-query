@@ -3,7 +3,8 @@
 before:
   hooks:
 builds:
-  - main: ./cmd/tfq
+  - binary: tfq
+    main: ./cmd/tfq
     env:
       - CGO_ENABLED=0
     goos:
